@@ -5,8 +5,7 @@ class Connection{
 	protected $datab;
 	protected $transaction;
 
-								//un phpmyadmin    pass phpmyadmin     ip 				dbname
-	public function __construct($username="root", $password ="", $host="localhost", $dbname="medallion", $options = []){
+	public function __construct($username="oxew069ybp3wycy0", $password ="vsnyzge99rpucqd5", $host="edo4plet5mhv93s3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", $dbname="uwkg1nrcjdwjfbg7", $options = []){
 		
 		$this->isConn = TRUE;
 		try{
@@ -20,21 +19,16 @@ class Connection{
 			throw new Exception($e->getMessage());			
 		}
 
-	}//endDefaultConstructor
+	}//TerminoConstructor
  
-
-	//disconnect from db
 	public function Disconnect(){
-		$this->datab = NULL;//close connection in PDO
+		$this->datab = NULL;//Cerrando conexion PDO
 		$this->isConn = FALSE;
-	}//endDisconnectFunction
+	}//Termino Desconexion funcion
 
 
 	
 
 
-}//endClassDatabase
-
- //$con = new Connection(); //for debugging only
-//echo '	debug connection';
+}
  ?>
