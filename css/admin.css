@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../images/wpopcorn.png);
+	background-repeat: no-repeat;
+    background-size: cover;
+	height:100vh !important;
+    background-position: center center;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+    height:625px;
+    }
+	div.loginbox{
+        transition: all ease-in-out .4s;
+		width: 80%;
+	}
+}
+@media only screen and (max-width: 700px) {
+    body {
+      height:925px;
+    }
+	div.loginbox{
+        transition: all ease-in-out .4s;
+		width: 80%;
+	}
+}
+@media only screen and (max-width: 1090px){
+    div.loginbox{
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    body {
+        height:1200px;
+    }
+    div.loginbox{
+        transition: all ease-in-out .4s;
+		width: 400px;
+    }
+}
+
+.loginbox{
+    transition: all ease-in-out .4s;
+    width: 30%;
+    height: 420px;
+    background: rgba(119, 119, 119, 0.562);
+    border-radius: 2rem;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.loginbox input[type="text"], input[type="password"], input[type="select"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox button[type="submit"]
+{
+    border: none;
+    outline: none;
+	width: 100%;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 20px;
+}
+.loginbox button[type="submit"]:hover
+{
+    cursor: pointer;
+    color: #000;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(255, 0, 0);
+}
+
+.loginbox a:hover
+{
+    color: #ffc107;
+}
+.btn{   
+    font-size: 18px;
+    border: #0000;
+    border-radius: 5rem;
+    background: #fcfcfc8f;
+    padding: 7px 20px;
+    cursor: pointer;
+    margin: 0px;
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    }
+    .btn-primary{
+    color: rgb(0, 0, 0);
+    }
+    .btn:hover{
+    color: #131316;
+    }
+    .btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(270deg,#f12711,#f58319);
+    z-index: -1;
+    transition: 0.3s;
+    }
+    .btn::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    }
+    .btn::before{
+    height: 180%;
+    }
+    .btn:hover::before{
+    height: 0%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
