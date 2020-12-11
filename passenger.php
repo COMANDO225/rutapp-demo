@@ -150,7 +150,6 @@ if(isset($_SESSION['accomodation'])){
 
 		</section>
 	</section>
-	<?php require_once('admin/modal/message.php'); ?>
 
 	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>

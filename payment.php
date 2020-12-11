@@ -9,7 +9,7 @@ if(isset($_SESSION['tracker'])){
 ?>
 
 <!DOCTYPE html>
-<html lang="">
+<html lang="es">
 
 <head>
 	<meta charset="utf-8">
@@ -181,7 +181,8 @@ if(isset($_SESSION['tracker'])){
 									<strong>- Nro de Registro: <?= $tracker; ?></strong>
 								</table>
 								<center>
-									<button class="imprimir btn btn-success" type="button" onclick="javascript:window.print()">Imprimir</button>
+									<button class="imprimir btn btn-success" type="button"
+										onclick="javascript:window.print()">Imprimir</button>
 									<a href="index.php" class="btn btn-success">Regresar a RutApp</a>
 								</center>
 							</div>

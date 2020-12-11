@@ -23,7 +23,7 @@
             <button type="submit"  class="btn btn-primary btn-block" name="login">Acceder</button>
         </form>
     </div>
-<?php require_once('modal/message.php'); ?>
+
 
 <script type="text/javascript" src="../assets/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>

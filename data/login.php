@@ -17,7 +17,7 @@ if(isset($_POST['un']) && isset($_POST['pwd']) ){
 		$_SESSION['logged'] = $result['user_id'];
 	}else{
 		$return['valid'] = false;
-		$return['msg'] = "Invalid Username / Password!";
+		$return['msg'] = "Usuario / Contraseña Invalida!";
 	}
 	echo json_encode($return);
 }//end isset

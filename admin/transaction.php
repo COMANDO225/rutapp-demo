@@ -48,7 +48,6 @@ require_once('session_login.php');
 
 
 <?php require_once('modal/view_passenger.php'); ?>
-<?php require_once('modal/message.php'); ?>
 <?php require_once('modal/confirmation.php'); ?>
 
 <script type="text/javascript" src="../assets/js/jquery-3.1.1.min.js"></script>

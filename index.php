@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="images/logo.ico" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   </head>
 
   <body class="hidden">
@@ -18,9 +15,7 @@
       <h2 class="animate">POWERED BY ALMEYDA</h2>
     </div>
     <header class="none">
-      <a href="index.php" class="logo"
-        ><img src="images/rutapp.png" alt="" /> Rut<span>APP</span></a
-      >
+      <a href="index.php" class="logo"><img src="images/rutapp.png" alt="" /> Rut<span>APP</span></a>
       <div class="toggle" onclick="toggleMenu();"></div>
       <ul class="lista">
         <li><a href="#inicio" onclick="toggleMenu();">Inicio</a></li>
@@ -32,14 +27,17 @@
     </header>
 
     <section class="headerbackground" id="inicio">
+      <div id="viddeo">
       <video autoplay loop class="video-background" muted plays-inline>
-        <source src="video/Video2-1.m4v" type="video/mp4" />
+        <source id="output" src="video/Video2-1.m4v" type="video/mp4" />
       </video>
+      </div>
+      <div class="video2"></div>
       <div class="textbox">
         <h2>"Estoy aquí para ti"</h2>
         <h3>TU <span>DESTINO</span> TE ESPERA</h3>
         <a href="reserved.php" class="btn start">EMPEZAR</a>
-        <a href="#" class="btn ofertas">VER OFERTAS</a>
+        <a href="#" id="subbmit-video" onclick="toggle();" class="btn ofertas">CAMBIAR INTRO</a>
       </div>
     </section>
 
@@ -124,10 +122,6 @@
         </div>
       </div>
     </section>
-    
-
-
-
     <section class="main" id="terminales">
         <div class="heading title-cards" >
             <h2>Terminales</h2>
@@ -297,7 +291,6 @@
       <div class="paisaje2"></div>
       <div class="paisaje"></div>
     </section>
-
     <section class="contactos" id="contacto">
         <div class="heading title-cards contacto">
             <h2>Ponte en contacto con este <span>pechito caribeño</span></h2>
@@ -343,7 +336,6 @@
         </div>
       </div>
     </section>
-
     <section class="mail" >
         <div class="heading blanco">
             <h2>Hazmelo <span class="spancolor">SABER</span></h2>
@@ -380,7 +372,7 @@
         <p>Copyright ©2020 Secuela <span>Peliculon-Project</span> . Todos los derechos reservados.
         </p>
     </div>
-
+    </script>
     <script type="text/javascript">
       window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
@@ -398,17 +390,18 @@
           mailbox.classList.toggle('activar');
       }
 
-      // window.addEventListener('scroll', function(){
-
-      //     var header = document.querySelector('header');
-      //     var altura = $(header).height()
-      //     header.classList.toggle('sticky',window.scrollY > altura);
-      // });
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/loader.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#subbmit-video").click(function(){
+            $("#viddeo").toggle();
+        });
+      });
+    </script>
     <script>
       var mySwiper = new Swiper(".swiper-container", {
         // Optional parameters

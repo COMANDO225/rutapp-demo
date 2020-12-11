@@ -6,7 +6,7 @@ if(isset($_POST['tracker'])){
 
 	$result = $book->deleteBook($tracker);
 	$return['valid'] = true;
-	$return['msg'] = "Reservation Deleted Successfully!";
+	$return['msg'] = "¡Reserva eliminada correctamente bb!";
 	echo json_encode($return);
 }//isset
 	

@@ -10,12 +10,12 @@ $books = $book->getAllBook();
 <table id="myTable-book" class="table table-bordered table-hover" cellspacing="0" width="100%">
 	<thead>
 	    <tr>
-            <th>Book ID</th>
-	        <th>Book By</th>
-	        <th>Contact</th>
-	        <th>Address</th>
-	        <th>Departure Date</th>
-	        <th><center>Action</center></th>
+            <th>Registro ID</th>
+	        <th>Reservado Por</th>
+	        <th>Contacto</th>
+	        <th>Dirección</th>
+	        <th>Fecha de salida</th>
+	        <th><center>Acción</center></th>
 	    </tr>
 	</thead>
     <tbody>
@@ -28,11 +28,11 @@ $books = $book->getAllBook();
     			<td><?= $b['book_departure']; ?></td>
     			<td>
     				<center>
-    					<button type="button" onclick="deleteBook('<?= $b['book_tracker']; ?>');" class="btn btn-danger btn-xs">Cancel
+    					<button type="button" onclick="deleteBook('<?= $b['book_tracker']; ?>');" class="btn btn-danger btn-xs">Cancelar
     					<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
     					</button>
     					&nbsp;
-    					<button type="button" onclick="viewBook('<?= $b['book_tracker']; ?>')" class="btn btn-success btn-xs">Accept Payment
+    					<button type="button" onclick="viewBook('<?= $b['book_tracker']; ?>')" class="btn btn-success btn-xs">Aceptar Pago
     					<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
     					</button>
     				</center>

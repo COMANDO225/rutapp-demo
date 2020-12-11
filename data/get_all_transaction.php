@@ -11,12 +11,12 @@ $transactions = $transaction->getAllTransaction();
 <table id="myTable-trans" class="table table-bordered table-hover" cellspacing="0" width="100%">
 	<thead>
 	    <tr>
-	        <th>Name</th>
-	        <th><center>Age</center></th>
-	        <th><center>Gender</center></th>
-	        <th><center>Accomodation</center></th>
-	        <th><center>Paid</center></th>
-	        <th><center>Action</center></th>
+	        <th>Nombre</th>
+	        <th><center>Edad</center></th>
+	        <th><center>Género</center></th>
+	        <th><center>Alojamiento</center></th>
+	        <th><center>Pagado</center></th>
+	        <th><center>Acción</center></th>
 	    </tr>
 	</thead>
     <tbody>

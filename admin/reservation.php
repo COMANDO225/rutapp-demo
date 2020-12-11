@@ -8,7 +8,7 @@ require_once('session_login.php');
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title> Admin Panel </title>
+		<title>Panel Admin</title>
 
 		<!-- Bootstrap CSS -->
    	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
@@ -48,7 +48,7 @@ require_once('session_login.php');
 
 
 <?php require_once('modal/view_passenger.php'); ?>
-<?php require_once('modal/message.php'); ?>
+
 <?php require_once('modal/confirmation.php'); ?>
 
 <script type="text/javascript" src="../assets/js/jquery-3.1.1.min.js"></script>
@@ -185,7 +185,7 @@ require_once('session_login.php');
 	    				console.log(data);
 	    				$('#modal-view-pass').modal('hide');
 	    				showAllBook();
-	    				$('#modal-message').find('.modal-body').text('Transaction Save Successfully!');
+	    				$('#modal-message').find('.modal-body').text('La transacción se guardo con éxito!');
 	    				$('#modal-message').modal('show');
 	    			},
 	    			error: function(){

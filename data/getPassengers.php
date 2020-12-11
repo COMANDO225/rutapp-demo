@@ -13,11 +13,11 @@ if(isset($_POST['tracker'])){
 <table id="" class="table table-bordered table-hover" cellspacing="0" width="100%">
 	<thead>
 	    <tr>
-	        <th>Name</th>
-	        <th><center>Age</center></th>
-	        <th><center>Gender</center></th>
-	        <th><center>Discount</center></th>
-	        <th><center>Price</center></th>
+	        <th>Nombre</th>
+	        <th><center>Edad</center></th>
+	        <th><center>Genero</center></th>
+	        <th><center>Descuento</center></th>
+	        <th><center>Precio</center></th>
 	    </tr>
 	</thead>
 	<tbody>
@@ -36,11 +36,11 @@ if(isset($_POST['tracker'])){
 				<td align="center"><?= $l['book_gender']; ?></td>
 				<td align="center">
 					<select class="btn btn-default btn-xs" id="disc<?= $i; ?>">
-						<option value="1">None</option>
-						<option value=".90">Student 10%</option>
-						<option value=".80">Senior Citizen 20%</option>
-						<option value=".70">Children 30%</option>
-						<option value="0">Age 0 - 3 Free</option>
+						<option value="1">Ninguno</option>
+						<option value=".90">Estudiante 10%</option>
+						<option value=".80">Adulto Mayor 20%</option>
+						<option value=".70">De Tecsup 30%</option>
+						<option value="0">Edad 0 - 4 Gratis</option>
 					</select>
 				</td>
 				<input type="hidden" id="price<?= $i; ?>" value="<?= $l['acc_price']; ?>">
