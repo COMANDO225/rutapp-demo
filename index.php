@@ -29,7 +29,7 @@
     <section class="headerbackground" id="inicio">
       <div id="viddeo">
       <video autoplay loop class="video-background" muted plays-inline>
-        <source id="output" src="video/Video2-1.m4v" type="video/mp4" />
+        <source id="output" src="video/Video2-1" type="video/mp4" />
       </video>
       </div>
       <div class="video2"></div>
